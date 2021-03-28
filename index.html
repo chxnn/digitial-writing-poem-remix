@@ -8,19 +8,18 @@
     <!-- custom font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap"
+      href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Playfair+Display&display=swap"
       rel="stylesheet"
     />
-    
 
-    <title>peaches</title>
+    <title>would you</title>
 
     <!-- styles -->
     <style>
       body {
-        font-family: "Dosis", sans-serif;
+        font-family: "Playfair Display", sans-serif;
         margin: 2em;
-        background-color: #F9DEB9;
+        background-color: #F0B9C1;
         color: #FFF;
         font-size: 1.2em;
       }
@@ -39,13 +38,13 @@
     </style>
   </head>
   <body>
-    <h1>peaches</h1>
+    <h1>would you</h1>
     <div id="poem"></div>
     <script>
       // set up the lists of words
-      const subjects = "you,I,we,they".split(","),
-        verbs = "run,walk,speak,drift,talk,whisper".split(","),
-        objects = "me,you,her,him,them".split(",");
+      const 
+      verbs = "wonder,speak,sing,listen,".split(","),
+        objects = "me,them,her,him".split(",");
       // set up the counter
       let counter = 0;
 
@@ -61,12 +60,13 @@
           // indent is true so add an indent class
           line.classList.add("indent");
         }
-        const text =
-          getRandomFromList(subjects) +
-          " " +
-          getRandomFromList(verbs) +
-          " to " +
-          getRandomFromList(objects);
+        const text =      
+              "please"
+        " "
+          getRandomFromList(verbs) + 
+              " to " + 
+              getRandomFromList(objects);
+
         const lineText = document.createTextNode(text);
         line.appendChild(lineText);
         // get the poem
